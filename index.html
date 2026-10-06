@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>السكب</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="root">
+ <section id="auth" hidden>
+  <div class="authbox"><div id="authLogo" class="logoWrap"></div><h2 id="authTitle">تسجيل دخول</h2>
+   <input id="aUser" placeholder="اسم المستخدم" autocomplete="username" hidden>
+   <input id="aMail" type="email" placeholder="الجيميل example@gmail.com" autocomplete="email">
+   <input id="aPass" type="password" placeholder="كلمة السر" autocomplete="current-password">
+   <small id="aHint" hidden>كلمة السر: 6 أحرف + رمز مثل النقطة (.) + 6 أرقام على الأقل</small>
+   <button id="aGo" class="btn">دخول</button><a id="aSwitch" href="#">ليس لديك حساب؟ أنشئ حساباً</a></div>
+ </section>
+ <section id="app" hidden>
+  <header><button id="back" class="icon" hidden aria-label="رجوع">➜</button>
+   <div id="hLogo" class="logoWrap"></div><b id="siteName"></b>
+   <span class="sp"></span><span id="bal" class="chip"></span>
+   <button id="histBtn" class="icon" aria-label="السجل">📋</button>
+   <button id="gear" class="icon" aria-label="الإعدادات">⚙️</button></header>
+  <main id="view"></main>
+  <footer id="foot"></footer>
+ </section>
+</div>
+<div id="drawerBg" hidden></div>
+<aside id="drawer" hidden><button id="theme" class="dItem">☀️ الوضع الفاتح / الداكن</button>
+ <div class="dItem">📞 التواصل والدعم<br><b id="support"></b></div><button id="logout" class="dItem red">تسجيل خروج</button></aside>
+<div id="modal" hidden></div><div id="toast" hidden></div>
+<script src="config.js"></script><script src="app.js"></script></body></html>
