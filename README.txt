@@ -18,3 +18,4 @@
  - الشعار (مكانه/حجمه) + رقم الدعم + جملة الفوتر: public/config.js
  - صورتك: ضعها داخل public (مثلاً logo.png) واكتب في config.js:  src:'logo.png'
  - صور المنتجات والأسعار: داخل PRODUCTS في api/index.js (img: src, x, y, scale)
+ 
